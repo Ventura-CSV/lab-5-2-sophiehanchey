@@ -12,12 +12,14 @@ def test_main_1():
     sys.stdin = io.StringIO(datastr)
 
     # main.main()
-    main.main()
+    num1, num2 = main.main()
     sys.stdout = sys.__stdout__
     print('captured ', captureout.getvalue())
     lines = captureout.getvalue().split('\n')
     print(lines)
 
+    assert num1 == 0
+    assert num2 == 0
     # regex_string = r'[\w,\w]*1'
     # regex_string += r'[\w,\w]*3'
     # regex_string += r'[\w,\w]*5'

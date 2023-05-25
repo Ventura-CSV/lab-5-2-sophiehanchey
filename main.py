@@ -1,3 +1,9 @@
+
+
+# No need to change any code in this Lab
+# Make sure that the local variables 'n1' and 'n2' cannot be used in main() without return statement
+
+
 def getinput(n1, n2):
     print('At function start id n1', id(n1))
     print('At function start id n2', id(n2))
@@ -15,6 +21,7 @@ def main():
     print('After call function id n1', id(num1))
     print('After call function id n2', id(num2))
     print(num1, num2)
+    return num1, num2
 
 
 if __name__ == '__main__':
